@@ -11,7 +11,7 @@ services:
       - "8666:8666"
     restart: always
     env_file:
-      - ./env
+      - ./env/dev.env
       - ./credentials/credentials.env
     environment:
       - REDIS_URL=redis://redis:6379

@@ -3,13 +3,10 @@ services:
 
   bot:
     container_name: top_decollage_bot
-    image: https://registry.gitlab.com/derby-hotels-collection/market/backend:0.0.1
+    image: https://ghcr.io/manusancho/top_decollage:0.0.1
     ports:
       - "8666:8666"
     restart: always
-    env_file:
-      - ./env
-      - ./credentials/credentials.env
     environment:
       - REDIS_URL=redis://redis:6379
     networks:

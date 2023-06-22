@@ -33,12 +33,12 @@ build: ## Build Docker image as "latest".
 	docker build --file "./Dockerfile" --tag $(DOCKER_REGISTRY_URL):latest .
 
 build-nc: ## Build Docker image as "latest" without caching.
-	docker build --no-cache --file "docker/Dockerfile" --tag $(DOCKER_REGISTRY_URL):latest .
+	docker build --no-cache --file "./Dockerfile" --tag $(DOCKER_REGISTRY_URL):latest .
 
 tag: ## Tag latest image as VERSION
-	docker tag $(DOCKER_REGISTRY_URL):latest $(DOCKER_IMAGE):$(VERSION)
+	docker tag $(DOCKER_REGISTRY_URL):latest $(DOCKER_REGISTRY_URL):$(VERSION)
 
-push: ## Deploy in prod
-	docker login
+push: ## Push image to remote registry
+	docker login $(DOCKER_REGISTRY_URL)
 	docker push $(DOCKER_REGISTRY_URL):$(VERSION)
 

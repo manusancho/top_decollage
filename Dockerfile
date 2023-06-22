@@ -28,8 +28,10 @@ ENV PATH="/usr/app/venv/bin:$PATH"
 
 WORKDIR /usr/app
 
-# copy sources
-COPY . .
+# copy just the necessary sources
+COPY src .
+COPY i18n .
+COPY manage.py .
 
 EXPOSE 8666
 
