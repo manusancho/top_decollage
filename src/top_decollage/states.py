@@ -93,8 +93,8 @@ class S001xWelcome(CustomBaseState):
             ReplyKeyboard(
                 keyboard=[
                     [
-                        KeyboardButton(t.PLAY),
                         KeyboardButton(t.NOT_NOW),
+                        KeyboardButton(t.PLAY),
                     ]
                 ],
                 one_time_keyboard=True,                
@@ -116,8 +116,8 @@ class S002xInstructions(CustomBaseState):
             ReplyKeyboard(
                 keyboard=[
                     [
-                        KeyboardButton(t.READY),
                         KeyboardButton(t.NOT_REALLY),
+                        KeyboardButton(t.READY),
                     ]
                 ],
                 one_time_keyboard=True,
@@ -148,11 +148,11 @@ class S003xShowFrame(CustomBaseState):
             question = t.IS_LAUNCHED_QUESTION
 
         analyzer = self.get_analyzer_class()(context, launched)
-        next_timestamp = analyzer.get_next(context)
+        next_frame = analyzer.get_next(context)
 
         # get frame url
         frame_api = self.get_video_api_class()(context)
-        frame_url = frame_api.get_frame(next_timestamp)
+        frame_url = frame_api.get_frame(next_frame)
         
         self.send(
             lyr.Markdown("[](%s)" % 
@@ -164,9 +164,6 @@ class S003xShowFrame(CustomBaseState):
                     [
                         KeyboardButton(t.TMINUS),
                         KeyboardButton(t.TPLUS),
-                        KeyboardButton(t.TZERO),
-                        KeyboardButton(t.RESTART),
-                        KeyboardButton(t.ABORT),
                     ],
                 ],
                 one_time_keyboard=True,
@@ -186,6 +183,11 @@ class S004xCongrats(CustomBaseState):
         rounds = context.get('rounds', 'few')
         t_zero_frame = context.get('current')
         
+        logger.info("Found frame %s in %s rounds" % (
+            t_zero_frame,
+            rounds,
+        ))
+        
         self.send(
             lyr.Markdown("[](%s)" % 
                 'https://cdn-icons-png.flaticon.com/512/7626/7626666.png'
@@ -201,9 +203,9 @@ class S004xCongrats(CustomBaseState):
             ReplyKeyboard(
                 keyboard=[
                     [
-                        KeyboardButton(t.RESTART),
                         KeyboardButton(t.ABORT),
-                    ],
+                        KeyboardButton(t.RESTART),
+                    ]
                 ],
                 one_time_keyboard=True,
             )

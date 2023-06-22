@@ -42,26 +42,21 @@ transitions = [
         dest=S003xShowFrame,
         factory=trg.Text.builder(its.READY),
     ),
-    # loop until finish
+    # loop until finish (use intent to infere launched)
     Tr(
         dest=S003xShowFrame,
         origin=S003xShowFrame,
-        factory=LoopTrigger.builder(intent=its.TMINUS, launched=False),
+        factory=ProcessAnswer.builder(intent=its.TMINUS, launched=False),
     ),
     Tr(
         dest=S003xShowFrame,
         origin=S003xShowFrame,
-        factory=LoopTrigger.builder(intent=its.TPLUS, launched=True),
+        factory=ProcessAnswer.builder(intent=its.TPLUS, launched=True),
     ),
     # game over
     Tr(
         dest=S004xCongrats,
         origin=S003xShowFrame,
-        factory=trg.Text.builder(intent=its.TZERO),
-    ),
-    Tr(
-        dest=S004xCongrats,
-        origin=S003xShowFrame,
-        factory=FinishTrigger.builder(tolerance=0),
+        factory=ProcessAnswer.builder(tolerance=1, jump_if_finish=True),
     ),
 ]

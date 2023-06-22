@@ -9,6 +9,9 @@ services:
     restart: always
     environment:
       - REDIS_URL=redis://redis:6379
+    env_file:
+      - ./env/dev.env
+      - ./credentials/credentials.env      
     networks:
       - redis
       - default
