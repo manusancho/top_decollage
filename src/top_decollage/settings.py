@@ -146,6 +146,13 @@ I18N_INTENTS_LOADERS = [
             "locale": "en",
         },
     },
+    {
+        "loader": "bernard.i18n.loaders.CsvIntentsLoader",
+        "params": {
+            "file_path": path.join(i18n_root("es"), "intents.csv"),
+            "locale": "es",
+        },
+    },
 ]
 
 # List of translation loaders, typically CSV files with translations.
@@ -154,7 +161,14 @@ I18N_TRANSLATION_LOADERS = [
         "loader": "bernard.i18n.loaders.CsvTranslationLoader",
         "params": {
             "file_path": path.join(i18n_root("en"), "responses.csv"),
-            "locale": "fr",
+            "locale": "en",
+        },
+    },
+    {
+        "loader": "bernard.i18n.loaders.CsvTranslationLoader",
+        "params": {
+            "file_path": path.join(i18n_root("es"), "responses.csv"),
+            "locale": "es",
         },
     },
 ]

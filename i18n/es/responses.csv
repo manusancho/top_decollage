@@ -1,10 +1,10 @@
 ERROR,¡Vaya!. Algo ha ido mal.
-CONFUSED,No entiendo lo que dices. Por favor, intenta usar otras palabras.
+CONFUSED,No entiendo lo que dices. Intenta usar otras palabras.
 ABORT_MESSAGE,Esta bien. ¡Que tengas un buen día!
 WELCOME,Hola {name}. Bienvenido a TOP DECOLLAGE!
 SHALL_WE_PLAY,¿Quieres jugar a un juego?
-NOT_NOW,Not now
-PLAY,¡Venga"
+NOT_NOW,Ahora no
+PLAY,¡Venga!
 PLAY,Sí
 PLAY,Claro
 INSTRUCTIONS,Necesitamos tu ayuda para encontrar el momento exacto del despegue del Falcon Heavy. Te mostraremos fotogramas del video de lanzamiento y nos tendrás que decir si el cohete ha despegado o no.

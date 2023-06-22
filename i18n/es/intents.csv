@@ -1,19 +1,18 @@
-START,hola
-START,jugar otra vez
-START,otra vez
+START,Hola
+START,Jugar otra vez
+START,Otra vez
 START,Sí
 START,¡Claro!
-RESTART,restart
-NOT_NOW,no
-NOT_NOW,no thanks
-NOT_NOW,not now
-ABORT,Exit
-ABORT,Not really...
+RESTART,Reiniciar
+NOT_NOW,No
+NOT_NOW,No gracias
+NOT_NOW,Ahora no
+ABORT,Cancelar
 PLAY,¡Venga"
 PLAY,Sí
 PLAY,Claro
 READY,¡Estoy listo!
 READY,Sí
 READY,Vamos
-TMINUS,Negative
-TPLUS,Positive
+TMINUS,No
+TPLUS,Sí
