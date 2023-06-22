@@ -12,7 +12,7 @@ include VERSION
 export $(shell sed 's/=.*//' VERSION)
 
 # include env file
-include .env
+include env/prod.env
 
 # HELP
 # This will output the help for each task

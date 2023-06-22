@@ -8,7 +8,7 @@ ROOT = path.dirname(__file__)
 
 environ.setdefault(
     "BERNARD_SETTINGS_FILE",
-    path.join(ROOT, "src/top_decollage/settings.py"),
+    path.join(ROOT, "top_decollage/settings.py"),
 )
 
 

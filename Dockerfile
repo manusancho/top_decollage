@@ -29,10 +29,9 @@ ENV PATH="/usr/app/venv/bin:$PATH"
 WORKDIR /usr/app
 
 # copy just the necessary sources
-COPY src .
-COPY i18n .
-COPY manage.py .
+COPY src ./src
+COPY i18n ./i18n
 
 EXPOSE 8666
 
-CMD ["python", "manage.py", "run"]
+CMD ["python", "./src/manage.py", "run"]
