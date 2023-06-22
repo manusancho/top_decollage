@@ -2,28 +2,26 @@ ERROR,Woops. Something went wrong.
 CONFUSED,It seems that I can't understand what you're saying. Please try another way to say it.
 WELCOME,Welcome {name}
 WELCOME,Hi {name}. Welcome to TOP DECOLLAGE!
-WELCOME,Howdy {name}! Welcome to TOP DECOLLAGE!
 WELCOME,Hello {name}! Welcome to TOP DECOLLAGE!
 SHALL_WE_PLAY,Shall we play a game?
 LETS_PLAY,Let's play
 PLAY,Let's play
 PLAY,Yes
 PLAY,Sure
-INSTRUCTIONS,We need your help to help us find the exact frame where the launcher lifts off (the T0). You'll know by the countdown on the top right corner.
+INSTRUCTIONS,We need you to help us find the exact frame where the launcher lifts off (the T0 or "top decollage"). We'll show you frames of the launch video and we need you to tell us if the countdown is negative (before the lift off) or positive (after the lift off).
 READY,I am ready!
 NOT_REALLY,Not really...
 ARE_YOU_READY,Are you ready?
 PLAY_AGAIN,Do you want to play again?
 PLAY_AGAIN,Shall we repeat?
-IS_LAUNCHED_QUESTION,At what point of the launch process are we in this frame?
+IS_LAUNCHED_QUESTION,How is the countdown? (You can check it on the top right corner of the video)
 IS_LAUNCHED_QUESTION_REPEAT,And now?
-TMINUS,Before launch (T-)
-TZERO,It's T0!
-TPLUS,After launch (T+)
+TMINUS,Negative
+TPLUS,Positive
 YES,Yes
 NO,No
 CONGRATULATIONS,Congrats! You found the lift-off in frame {t_zero_frame} in just {rounds} rounds.
 RESTART,Restart
 NOT_NOW,Not now
-ABORT,Exit
+ABORT,Cancel
 ABORT_MESSAGE,Ok. Have a nice day!

@@ -20,10 +20,8 @@ NOT_NOW,no thanks
 NOT_NOW,not now
 YES,Yes
 NO,No
-TMINUS,Before
-TZERO,T0
-TZERO,liftoff
-TPLUS,After
+TMINUS,Negative
+TPLUS,Positive
 RESTART,restart
 ABORT,Exit
 ABORT,Not really...

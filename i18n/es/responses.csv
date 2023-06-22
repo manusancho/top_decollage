@@ -1,0 +1,21 @@
+ERROR,¡Vaya!. Algo ha ido mal.
+CONFUSED,No entiendo lo que dices. Por favor, intenta usar otras palabras.
+ABORT_MESSAGE,Esta bien. ¡Que tengas un buen día!
+WELCOME,Hola {name}. Bienvenido a TOP DECOLLAGE!
+SHALL_WE_PLAY,¿Quieres jugar a un juego?
+NOT_NOW,Not now
+PLAY,¡Venga"
+PLAY,Sí
+PLAY,Claro
+INSTRUCTIONS,Necesitamos tu ayuda para encontrar el momento exacto del despegue del Falcon Heavy. Te mostraremos fotogramas del video de lanzamiento y nos tendrás que decir si el cohete ha despegado o no.
+ARE_YOU_READY,¿Preparado?
+NOT_REALLY,No mucho...
+READY,¡Estoy listo!
+IS_LAUNCHED_QUESTION,¿Ha despegado ya? (Fíjate en el reloj en la parte superior derecha)
+IS_LAUNCHED_QUESTION_REPEAT,¿Y ahora?
+TMINUS,No
+TPLUS,Sí
+PLAY_AGAIN,¿Quieres jugar de nuevo?
+ABORT,Cancelar
+RESTART,Reiniciar
+CONGRATULATIONS,¡Felicidades! Has localizado el frame {t_zero_frame} en solo {rounds} intentos.

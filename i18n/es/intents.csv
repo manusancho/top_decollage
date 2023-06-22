@@ -1,0 +1,19 @@
+START,hola
+START,jugar otra vez
+START,otra vez
+START,Sí
+START,¡Claro!
+RESTART,restart
+NOT_NOW,no
+NOT_NOW,no thanks
+NOT_NOW,not now
+ABORT,Exit
+ABORT,Not really...
+PLAY,¡Venga"
+PLAY,Sí
+PLAY,Claro
+READY,¡Estoy listo!
+READY,Sí
+READY,Vamos
+TMINUS,Negative
+TPLUS,Positive
