@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "./"
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/__pycache__": true,
+		},
+		"terminal.integrated.cwd": "./",
+		"python.terminal.activateEnvironment": true,
+		"python.terminal.activateEnvInCurrentTerminal": true,
+		"editor.detectIndentation": true,
+		"editor.rulers": [
+			80
+		],
+	}
+}

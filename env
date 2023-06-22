@@ -1,0 +1,5 @@
+# Deployment
+DEBUG=yes
+BERNARD_SETTINGS_FILE=src/top_decollage/settings.py
+BERNARD_BASE_URL=https://6ee3-206-204-137-151.ngrok-free.app
+DOCKER_IMAGE=top_decollage

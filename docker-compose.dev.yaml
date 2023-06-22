@@ -1,0 +1,33 @@
+version: '3.3'
+services:
+
+  bot:
+    container_name: top_decollage_bot
+    build: ./
+    volumes:
+      - ./src:/usr/app/src
+      - ./i18n:/usr/app/i18n
+    ports:
+      - "8666:8666"
+    restart: always
+    env_file:
+      - ./env
+      - ./credentials/credentials.env
+    environment:
+      - REDIS_URL=redis://redis:6379
+    networks:
+      - redis
+      - default
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:7
+    container_name: top_decollage_redis
+    restart: always
+    networks:
+      - redis
+
+networks:
+  redis:
+  default:

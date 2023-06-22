@@ -1,0 +1,29 @@
+START,hello
+START,hi
+START,howdy
+START,play again
+START,again
+START,another one
+START,Yes
+START,Sure
+PLAY,Let's play
+PLAY,Yes
+PLAY,sure
+LETS_GO,Let's go
+LETS_GO,Yes
+LETS_GO,Sure
+READY,I am ready!
+READY,Yes
+READY,Let's go
+NOT_NOW,no
+NOT_NOW,no thanks
+NOT_NOW,not now
+YES,Yes
+NO,No
+TMINUS,Before
+TZERO,T0
+TZERO,liftoff
+TPLUS,After
+RESTART,restart
+ABORT,Exit
+ABORT,Not really...

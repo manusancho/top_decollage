@@ -1,0 +1,1 @@
+bernard @ git+https://github.com/manusancho/bernard.git@fix/timeout
