@@ -1,11 +1,11 @@
 #!make
 #######################################################################
 #Script Name	: Makefile                                                                                             
-#Description	: Django/Docker-based project build and deploy manager.
+#Description	: Bernard-based Telegram bot build manager.
 #Args         	: None
-#Author       	: Manuel Sancho (info@kritical.es)
-#Version		: 1.3
-#Date			: 15/12/2022
+#Author       	: Manuel Sancho (manu.sancho at gmail.com)
+#Version		: 0.0.1
+#Date			: 22/06/2023
 #######################################################################
 
 include VERSION
