@@ -1,7 +1,7 @@
 #######################################################################
 # STAGE 1: Build stage
 #######################################################################
-FROM python:3.10 as build
+FROM python:3.10.12-bookworm as build
 LABEL AUTHOR="M. SANCHO <m.sancho@kritical.es>"
 
 # Add Gitlab to known hosts
@@ -19,7 +19,7 @@ RUN pip install --upgrade pip && \
 #######################################################################
 # STAGE 2: Run stage
 #######################################################################
-FROM python:3.10-slim-buster
+FROM python:3.10.12-slim
 LABEL AUTHOR="M. SANCHO <m.sancho@kritical.es>"
 
 # Copy python environment from first stage
