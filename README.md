@@ -6,9 +6,18 @@ This project is a Telegram Bot implemented using BERNARD's platform.
 Please refer to [BERNARD's documentation](https://github.com/BernardFW/bernard) for further details.
 
 
-## Motivation
+## What is this all about?
 
-This project has been coded as a test for WITH Madrid.
+The purpose of this project is to build a Telegram bot that will figure out the exact lift off time from a rocket launch video.
+
+The bot will prompt a user showing different frames extracted from a Falcon Heavy launch video. It will then use a bisection algorithm to narrow down the posibilities until the first frame where the rocket is launched (the T0) is reached. 
+
+Tipically in doesn't take more than 17 rounds (prompts) to finish.
+
+
+## Live Demo
+
+Feel free to try this bot in [https://t.me/TopDecollage](https://t.me/TopDecollageBot)
 
 
 ## Dependencies
@@ -18,11 +27,6 @@ This project has been coded as a test for WITH Madrid.
 - [Docker](https://docs.docker.com/) and [Docker Compose](https://docs.docker.com/compose/)
 
 .. For a comprehensive list of Python dependencies checkout `poetry.lock` and `requirements.txt` from [BERNARD's project](https://github.com/BernardFW/bernard).
-
-
-## Live Demo
-
-Feel free to try this bot in [https://t.me/TopDecollage](https://t.me/TopDecollage)
 
 
 ## Configuration
@@ -37,16 +41,6 @@ Also, you need to edit `env/prod.env` file for your needs.
 - *DOCKER_REGISTRY_URL*: A Docker container registry to push your image.
 
 
-## Installation
-
-This project is designed to be run inside Docker but it can be easily adapted to be run elsewhere. 
-
-In order to deploy the project with Docker follow this steps:
-1. Copy `docker-compose.yml` to the target server.
-2. Also copy `credentials/credentials.env` and `env/prod.env`
-3. Run `docker-compose up`
-
-
 ## Build
 
 Build operations are managed through a makefile for convinience.
@@ -58,6 +52,16 @@ In order to build the project from the sources, follow these steps:
 3. Run `make push` to push image to upload the image to the container registry.
 
 NOTE: This project is version managed. See [Versioning](#versioning) for detailed info.
+
+
+## Installation
+
+This project is designed to be run inside Docker but it can be easily adapted to be run elsewhere. 
+
+In order to deploy the project with Docker follow this steps:
+1. Copy `docker-compose.yml` to the target server.
+2. Also copy `credentials/credentials.env` and `env/prod.env`
+3. Run `docker-compose up`
 
 
 ## Development environment
@@ -88,6 +92,9 @@ Please note that:
 - Docker image is tagged using VERSION content.
 - `docker-compose.yml` references VERSION. 
 
+## Motivation
+
+This project has been coded as a test for WITH Madrid.
 
 
 ## Licensing
