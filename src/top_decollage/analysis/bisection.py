@@ -1,6 +1,8 @@
 import logging
 
 from .analyzer import Analyzer
+from ..apis.framex import FrameXApi
+
 
 logger = logging.getLogger("top_decollage.analyzer")
 
@@ -23,8 +25,10 @@ class BisectionAnalyzer(Analyzer):
         if "max" in context:
             assert int(context["max"]) == context["max"] and context["max"] > 0
             self.max = int(context["max"])
-        else:
+        elif 'frames' in context:
             self.max = context["max"] = context['frames']
+        else:
+            self.max = context["max"] = FrameXApi(context).get_frames()
             
         if launched == True:
             self.max = context["max"] = context["current"]

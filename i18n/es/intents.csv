@@ -4,6 +4,8 @@ START,Otra vez
 START,Sí
 START,¡Claro!
 RESTART,Reiniciar
+RESTART,Comenzar
+RESTART,Empezar
 NOT_NOW,No
 NOT_NOW,No gracias
 NOT_NOW,Ahora no
